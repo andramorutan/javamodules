@@ -2,7 +2,7 @@ package ro.andramorutan.secondpackage;
 
 import ro.andramorutan.firstpackage.First;
 
-public class Main
+public class SecondMain
 {
   public static void main(String[] args)
   {
