@@ -28,11 +28,17 @@ The module's name should be reverse dns. </br>
 #### Exports
 `exports` directive specifies what packages other modules can use </br>
 Usage: `exports exportedPackageName`
-#### Exports to
+
+#### Exports ... to
+`exports ... to` directive specifies what packages a specific module can use
+
+Usage: `exports exportedPackageName to moduleThatCanUseThePackage` 
+! As the provider of the module needs to be aware of the consumers this is strongly not recommended
 
 #### Requires
 `requires` directive specifies the modules needed by the current module  </br>
 Usage: `requires requiredModuleName`
+
 #### Requires static
 
 #### Requires transitive
