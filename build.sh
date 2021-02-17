@@ -31,6 +31,10 @@ jar -c -f output/mlib/forth.jar -C output/classes .
 
 javac -p output/mlib -d output/classes `find fifth -name *.java`
 jar -c -f output/mlib/fifth.jar -C output/classes .
-#/bin/rm -rf output/classes
+/bin/rm -rf output/classes
 
-java -p output/mlib -m ro.andramorutan.fifthModule/ro.andramorutan.fifthpackage.FifthMain
+javac -p output/mlib -d output/classes `find sixth -name *.java`
+jar -c -f output/mlib/sixth.jar -C output/classes .
+/bin/rm -rf output/classes
+
+java -p output/mlib -m ro.andramorutan.sixthModule/ro.andramorutan.sixthpackage.SixthMain

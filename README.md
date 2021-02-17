@@ -65,7 +65,18 @@ Usage: `uses AbstrectService.class` </br>
 See: third/module-info.java forth/module-info.java fifth/module-info.java
 
 #### Open
+`open` directive specifies that the module is  available via Reflection. </br.
+Usage `module open modulename` </br>
+
 
 #### Opens
+`opens` directive specifies the packages which have the **private types** that are to be available via Reflection </br>
+Usage `opens packagename` </br>
+See: first/module-info.java
+
+#### Opens .. to
+`opens` directive specifies the packages which have the **private types** that are to be available via Reflection limiting to modules that 
+have access to these types </br>
+Usage `opens packagename to modulename` </br>
 
 ## Next steps: Mavenize this app

@@ -13,4 +13,9 @@ public class FirstServiceImpl implements FirstService
   {
     System.out.println("FirstServiceImpl.firstMethod");
   }
+
+  public void hiddenMethod()
+  {
+    System.out.println("FirstServiceImpl.hiddenMethod");
+  }
 }
