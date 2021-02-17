@@ -1,4 +1,4 @@
-# javamodules
+# Java Modules
 
 The purpose of the project is to test Java Platform Module System (JPMS), also known as Java Modules.
 
@@ -42,15 +42,27 @@ Usage: `requires requiredModuleName`
 See: second/module-info.java 
 
 #### Requires transitive
-`requires transitive requiredAndFurtherExposedModuleName` - directive used to specify the modules needed by the current module that are provided to the consumer of the current module
+`requires transitive` - directive used to specify the modules needed by the current module that are provided to the consumer of the current module </br>
+Usage: `requires transitive requiredAndFurtherExposedModuleName`
+
 See: third/module-info.java forth/module-info.java
 
 #### Requires static
-`requires static requiredAndOptionallyFurtherExposedModuleName` directive specifies an optional dependency. It is compile-time dependecy
+`requires static` directive specifies an optional dependency. It is compile-time dependecy </br>
+Usage: `requires static requiredAndOptionallyFurtherExposedModuleName`
+
+#### Provides ... with
+https://www.oracle.com/corporate/features/understanding-java-9-modules.html :
+A service is an object of a class that implements the interface or extends the abstract class specified in the uses directive.
+`provides ... with` directive specifies a service the current modules makes available </br>
+Usage:
+`provides AbstrectService.class with ConcreteService.class` </br>
+See: third/module-info.java forth/module-info.java fifth/module-info.java
 
 #### Uses
-
-#### Provides with
+`uses` directive specifies a service used by this module </br>
+Usage: `uses AbstrectService.class` </br>
+See: third/module-info.java forth/module-info.java fifth/module-info.java
 
 #### Open
 

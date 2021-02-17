@@ -4,6 +4,11 @@ import ro.andramorutan.firstpackage.FirstService;
 
 public class FirstServiceImpl implements FirstService
 {
+  public FirstServiceImpl()
+  {
+    System.out.println("FirstServiceImpl.FirstServiceImpl");
+  }
+
   @Override public void firstMethod()
   {
     System.out.println("FirstServiceImpl.firstMethod");
