@@ -78,5 +78,3 @@ See: first/module-info.java
 `opens` directive specifies the packages which have the **private types** that are to be available via Reflection limiting to modules that 
 have access to these types </br>
 Usage `opens packagename to modulename` </br>
-
-## Next steps: Mavenize this app
